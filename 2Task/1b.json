@@ -1,0 +1,51 @@
+{
+  "model": "η = β₀ + Σ βₖξₖ",
+  "n": 50,
+  "df": 44,
+  "sigma2": 2.4748,
+  "R2": 0.6404,
+  "coefficients": {
+    "β0": {
+      "estimate": 1.9699,
+      "se": 0.2259,
+      "t_stat": 8.7205,
+      "p_value": 0.0,
+      "significant": 0.0
+    },
+    "β1": {
+      "estimate": 2.9485,
+      "se": 0.4034,
+      "t_stat": 7.3098,
+      "p_value": 0.0,
+      "significant": 0.0
+    },
+    "β2": {
+      "estimate": -2.1777,
+      "se": 0.4033,
+      "t_stat": -5.4,
+      "p_value": 0.0,
+      "significant": 0.0
+    },
+    "β3": {
+      "estimate": 0.5454,
+      "se": 0.3814,
+      "t_stat": 1.4301,
+      "p_value": 0.1597,
+      "significant": 0.1597
+    },
+    "β4": {
+      "estimate": 0.337,
+      "se": 0.3732,
+      "t_stat": 0.9032,
+      "p_value": 0.3713,
+      "significant": 0.3713
+    },
+    "β5": {
+      "estimate": -1.08,
+      "se": 0.3869,
+      "t_stat": -2.7911,
+      "p_value": 0.0077,
+      "significant": 0.0077
+    }
+  }
+}
