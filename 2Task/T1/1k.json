@@ -1,0 +1,45 @@
+{
+  "bootstrap_comparison": {
+    "method": "Непараметрический бутстрап сравнения RSS",
+    "B": 10000,
+    "test_type": "Двусторонний доверительный интервал"
+  },
+  "models": {
+    "full": "η = β₀ + β₁ξ₁ + β₂ξ₂ + β₃ξ₃ + β₄ξ₄ + β₅ξ₅",
+    "reduced": "η = β₀ + β₁ξ₁ + β₂ξ₂ + β₃ξ₃ + β₅ξ₅",
+    "removed_variable": "ξ₄ (наименее значимый, p=0.3713)"
+  },
+  "RSS_comparison": {
+    "RSS_full": 108.8929,
+    "RSS_reduced": 110.9119,
+    "h_observed": 2.019,
+    "relative_increase_percent": 1.85
+  },
+  "bootstrap_distribution": {
+    "mean": 3.987,
+    "std": 5.0101,
+    "median": 2.1191,
+    "min": 0.0,
+    "max": 43.3658,
+    "percentiles": {
+      "2.5%": 0.005,
+      "5%": 0.0216,
+      "95%": 14.0706,
+      "97.5%": 18.2473
+    }
+  },
+  "confidence_interval_95": {
+    "method": "Перцентильный (через delta*)",
+    "lower": -10.0404,
+    "upper": 4.0163,
+    "contains_zero": true
+  },
+  "hypothesis_test": {
+    "H0": "h = 0 (модели не различаются)",
+    "H1": "h ≠ 0 (модели различаются)",
+    "alpha": 0.05,
+    "reject_H0": false,
+    "conclusion": "Удаление ξ₄ НЕ ухудшает модель значимо",
+    "recommendation": "Можно удалить ξ₄"
+  }
+}

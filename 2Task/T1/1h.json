@@ -1,0 +1,31 @@
+{
+  "cross_validation": {
+    "method": "Leave-One-Out Cross-Validation (LOOCV)",
+    "description": "Поочередное исключение одного наблюдения",
+    "n_observations": 50,
+    "n_folds": 50
+  },
+  "sums_of_squares": {
+    "TSS_total": 302.8171,
+    "PRESS_CVSS": 139.0156,
+    "TSS_formula": "Σ(y_i - ȳ)²",
+    "PRESS_formula": "Σ(y_i - ŷ_(i))²"
+  },
+  "r_squared": {
+    "R2_ordinary": 0.6404,
+    "R2_LOOCV": 0.5409,
+    "R2_difference": 0.0995,
+    "overfitting_assessment": "Небольшое переобучение"
+  },
+  "prediction_quality": {
+    "R2_LOOCV": 0.5409,
+    "quality": "Хорошая",
+    "has_predictive_power": true,
+    "interpretation": "Модель предсказывает лучше, чем простое среднее"
+  },
+  "predictions": {
+    "y_pred_min": -1.4013,
+    "y_pred_max": 6.1221,
+    "y_pred_mean": 2.2206
+  }
+}

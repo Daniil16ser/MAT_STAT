@@ -1,0 +1,167 @@
+{
+  "model_comparison": {
+    "description": "Сравнение полной и редуцированной моделей",
+    "removed_variable": "ξ₄",
+    "removal_reason": "Наименее значимый коэффициент в полной модели"
+  },
+  "full_model": {
+    "equation": "η = β₀ + β₁ξ₁ + β₂ξ₂ + β₃ξ₃ + β₄ξ₄ + β₅ξ₅",
+    "n_observations": 50,
+    "n_parameters": 6,
+    "degrees_of_freedom": 44,
+    "coefficients": {
+      "β0": {
+        "estimate": 1.9699,
+        "standard_error": 0.2259,
+        "t_statistic": 8.7205,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β1": {
+        "estimate": 2.9485,
+        "standard_error": 0.4034,
+        "t_statistic": 7.3098,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β2": {
+        "estimate": -2.1777,
+        "standard_error": 0.4033,
+        "t_statistic": -5.4,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β3": {
+        "estimate": 0.5454,
+        "standard_error": 0.3814,
+        "t_statistic": 1.4301,
+        "p_value": 0.1597,
+        "significant": false
+      },
+      "β4": {
+        "estimate": 0.337,
+        "standard_error": 0.3732,
+        "t_statistic": 0.9032,
+        "p_value": 0.3713,
+        "significant": false
+      },
+      "β5": {
+        "estimate": -1.08,
+        "standard_error": 0.3869,
+        "t_statistic": -2.7911,
+        "p_value": 0.0077,
+        "significant": true
+      }
+    },
+    "goodness_of_fit": {
+      "R_squared": 0.6404,
+      "R_squared_adjusted": 0.5995,
+      "RSS": 108.8929,
+      "MSE": 2.4748,
+      "F_statistic": 15.6717,
+      "F_p_value": 0.0
+    }
+  },
+  "reduced_model": {
+    "equation": "η = β₀ + β₁ξ₁ + β₂ξ₂ + β₃ξ₃ + β₅ξ₅",
+    "n_observations": 50,
+    "n_parameters": 5,
+    "degrees_of_freedom": 45,
+    "coefficients": {
+      "β0": {
+        "estimate": 1.9927,
+        "standard_error": 0.224,
+        "t_statistic": 8.8952,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β1": {
+        "estimate": 2.8737,
+        "standard_error": 0.394,
+        "t_statistic": 7.2943,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β2": {
+        "estimate": -2.1443,
+        "standard_error": 0.4008,
+        "t_statistic": -5.3505,
+        "p_value": 0.0,
+        "significant": true
+      },
+      "β3": {
+        "estimate": 0.4931,
+        "standard_error": 0.3762,
+        "t_statistic": 1.3109,
+        "p_value": 0.1966,
+        "significant": false
+      },
+      "β5": {
+        "estimate": -1.0733,
+        "standard_error": 0.3861,
+        "t_statistic": -2.7801,
+        "p_value": 0.0079,
+        "significant": true
+      }
+    },
+    "goodness_of_fit": {
+      "R_squared": 0.6337,
+      "R_squared_adjusted": 0.6012,
+      "RSS": 110.9119,
+      "MSE": 2.4647,
+      "F_statistic": 19.4653,
+      "F_p_value": 0.0
+    }
+  },
+  "comparison_metrics": {
+    "features_count": {
+      "full": 5,
+      "reduced": 4,
+      "change": -1
+    },
+    "parameters_count": {
+      "full": 6,
+      "reduced": 5,
+      "change": -1
+    },
+    "R_squared": {
+      "full": 0.6404,
+      "reduced": 0.6337,
+      "change": -0.0067
+    },
+    "R_squared_adjusted": {
+      "full": 0.5995,
+      "reduced": 0.6012,
+      "change": 0.0016
+    },
+    "RSS": {
+      "full": 108.8929,
+      "reduced": 110.9119,
+      "change": 2.019
+    },
+    "MSE": {
+      "full": 2.4748,
+      "reduced": 2.4647,
+      "change": -0.0101
+    }
+  },
+  "f_test_for_removed_variable": {
+    "tested_variable": "ξ₄",
+    "null_hypothesis": "H₀: β₄ = 0 (удаление оправдано)",
+    "alternative_hypothesis": "H₁: β₄ ≠ 0 (удаление неоправдано)",
+    "F_statistic": 0.8158,
+    "degrees_of_freedom": {
+      "df1": 1,
+      "df2": 44
+    },
+    "p_value": 0.3713,
+    "alpha": 0.05,
+    "removal_justified": true,
+    "conclusion": "Удаление ОПРАВДАНО (ξ₄ незначима)"
+  },
+  "best_model": {
+    "criterion": "Скорректированный R²",
+    "winner": "Редуцированная модель",
+    "reason": "R²_adj редуцированной (0.6012) >= R²_adj полной (0.5995)"
+  }
+}

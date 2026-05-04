@@ -1,0 +1,30 @@
+{
+  "test": {
+    "name": "Тест инверсий на независимость остатков",
+    "hypotheses": {
+      "H0": "Остатки независимы (случайная последовательность)",
+      "H1": "Остатки зависимы (есть автокорреляция)"
+    }
+  },
+  "data": {
+    "n_observations": 50,
+    "n_parameters": 6
+  },
+  "residuals": {
+    "mean": -0.0,
+    "std": 1.4907,
+    "min": -3.4364,
+    "max": 2.9309
+  },
+  "inversion_test": {
+    "inversions_count_K": 33,
+    "expected_K": 32.0,
+    "variance_K": 8.5667,
+    "Z_statistic": 0.3417,
+    "p_value": 0.7326,
+    "alpha": 0.05,
+    "Z_critical_95": 1.96,
+    "significant": false,
+    "conclusion": "Остатки независимы (H0 не отвергается)"
+  }
+}
