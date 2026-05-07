@@ -147,38 +147,38 @@ category = {
     5: [90, 92]
 }
 
-model = CategoricalRegression(category)
+# model = CategoricalRegression(category)
 
-print("=" * 70)
-print("КОЭФФИЦИЕНТЫ (СРЕДНИЕ ПО ГРУППАМ)")
-print("=" * 70)
-for i, (cat, coef) in enumerate(zip(model.categories, model.get_coefficients())):
-    print(f'  Группа {cat}: {coef:.4f}')
+# print("=" * 70)
+# print("КОЭФФИЦИЕНТЫ (СРЕДНИЕ ПО ГРУППАМ)")
+# print("=" * 70)
+# for i, (cat, coef) in enumerate(zip(model.categories, model.get_coefficients())):
+#     print(f'  Группа {cat}: {coef:.4f}')
 
-print(f'\nRSS = {model.get_RSS():.4f}')
-print(f'MSE = {model.get_MSE():.4f}')
-print(f'df_residual = {model.df_residual}')
+# print(f'\nRSS = {model.get_RSS():.4f}')
+# print(f'MSE = {model.get_MSE():.4f}')
+# print(f'df_residual = {model.df_residual}')
 
-# Попарные сравнения с процедурой Бонферрони-Холма
-print("\n" + "=" * 70)
-print("ПОПАРНЫЕ СРАВНЕНИЯ (Бонферрони-Холм, α = 0.05)")
-print("=" * 70)
+# # Попарные сравнения с процедурой Бонферрони-Холма
+# print("\n" + "=" * 70)
+# print("ПОПАРНЫЕ СРАВНЕНИЯ (Бонферрони-Холм, α = 0.05)")
+# print("=" * 70)
 
-results = model.compare(alpha=0.05)
+# results = model.compare(alpha=0.05)
 
-print(f'\n{"Ранг":<6} {"Группы":<12} {"Разница":<10} {"t":<10} {"p-value":<10} {"α скорр.":<12} {"Значимо?":<12}')
-print('-' * 70)
-for r in results:
-    print(f'{r["rank"]:<6} '
-          f'{r["cat1"]} vs {r["cat2"]:<5} '
-          f'{r["diff"]:<10.4f} '
-          f'{r["t_stat"]:<10.4f} '
-          f'{r["p_value"]:<10.4f} '
-          f'{r["adjusted_alpha"]:<12.4f} '
-          f'{"ДА" if r["significant"] else "НЕТ":<12}')
+# print(f'\n{"Ранг":<6} {"Группы":<12} {"Разница":<10} {"t":<10} {"p-value":<10} {"α скорр.":<12} {"Значимо?":<12}')
+# print('-' * 70)
+# for r in results:
+#     print(f'{r["rank"]:<6} '
+#           f'{r["cat1"]} vs {r["cat2"]:<5} '
+#           f'{r["diff"]:<10.4f} '
+#           f'{r["t_stat"]:<10.4f} '
+#           f'{r["p_value"]:<10.4f} '
+#           f'{r["adjusted_alpha"]:<12.4f} '
+#           f'{"ДА" if r["significant"] else "НЕТ":<12}')
 
-print('\n' + '=' * 70)
-print('ВЫВОДЫ:')
-print('=' * 70)
-for r in results:
-    print(f'  {r["conclusion"]}')
+# print('\n' + '=' * 70)
+# print('ВЫВОДЫ:')
+# print('=' * 70)
+# for r in results:
+#     print(f'  {r["conclusion"]}')

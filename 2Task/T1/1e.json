@@ -21,7 +21,7 @@
     "expected_K": 32.0,
     "variance_K": 8.5667,
     "Z_statistic": 0.3417,
-    "p_value": 0.7326,
+    "p_value": 0.1186,
     "alpha": 0.05,
     "Z_critical_95": 1.96,
     "significant": false,

@@ -16,22 +16,22 @@
     "relative_increase_percent": 1.85
   },
   "bootstrap_distribution": {
-    "mean": 3.987,
-    "std": 5.0101,
-    "median": 2.1191,
+    "mean": 4.0482,
+    "std": 5.1477,
+    "median": 2.1165,
     "min": 0.0,
-    "max": 43.3658,
+    "max": 48.6503,
     "percentiles": {
-      "2.5%": 0.005,
-      "5%": 0.0216,
-      "95%": 14.0706,
-      "97.5%": 18.2473
+      "2.5%": 0.0042,
+      "5%": 0.0193,
+      "95%": 14.7235,
+      "97.5%": 18.2567
     }
   },
   "confidence_interval_95": {
     "method": "Перцентильный (через delta*)",
-    "lower": -10.0404,
-    "upper": 4.0163,
+    "lower": -10.7066,
+    "upper": 4.0187,
     "contains_zero": true
   },
   "hypothesis_test": {
